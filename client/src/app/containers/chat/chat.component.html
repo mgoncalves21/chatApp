@@ -1,6 +1,6 @@
 <div class="container">
   <h1>Competent programming - Chat App</h1>
-  <app-usernname (userNameEvent)="userNameUpdate($event)" *ngIf="!userName"></app-usernname>
+  <app-username (userNameEvent)="userNameUpdate($event)" *ngIf="!userName"></app-username>
   <div class="chatbox">
     <div class="chatbox__user-list">
       <h2>User list</h2>
@@ -18,10 +18,10 @@
           </div>
         </div>
       </div>
+      <div class="send-message">
+        <input class="input-send" type="text" [(ngModel)]="message">
+        <button class="button-send" (click)="sendMessage()">Send</button>
+      </div>
     </div>
-  </div>
-  <div class="send-message">
-    <input type="text" [(ngModel)]="message">
-    <button (click)="sendMessage()">Send</button>
   </div>
 </div>

@@ -4,13 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ChatComponent } from './containers/chat/chat.component';
-import { UsernnameComponent } from './components/usernname/usernname.component';
+import { UsernameComponent } from './components/usernname/username.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChatComponent,
-    UsernnameComponent
+    UsernameComponent
   ],
   imports: [
     BrowserModule,

@@ -12,11 +12,14 @@
   }
 }
 .chatbox {
-  background: rgba(255, 255, 255, 0.05);
+  background: darkslategray;
+  border: 5px solid mediumpurple;
   width: 80%;
   height: 75%;
   border-radius: 0.2em;
   position: relative;
+  margin: 10px;
+  padding: 10px;
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
   .messages_list {
     overflow-y: auto;
@@ -72,7 +75,7 @@
     margin: 1em 0.7em;
     &--active {
       @extend .chatbox__user;
-      background: rgba(23, 190, 187, 0.8);
+      background: rgba(21, 255, 9, 0.8);
     }
   }
   p {
@@ -98,5 +101,17 @@
       color: rgba(255, 255, 255, 0.9);
       font-weight: 300;
     }
+  }
+.send-message{
+  position: absolute;
+  bottom: 5px;
+  width: 70%;
+}
+
+.input-send{
+  width: 90%;
+}
+.button-send{
+    width: 10%;
   }
 }
